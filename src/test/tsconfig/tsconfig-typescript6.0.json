@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "erasableSyntaxOnly": true,
+    "ignoreDeprecations": "5.0",
+    "isolatedDeclarations": true,
+    "libReplacement": false,
+    "module": "Node20",
+    "moduleSuffixes": [".ios", ".native", ""],
+    "noCheck": false,
+    "noUncheckedSideEffectImports": true,
+    "rewriteRelativeImportExtensions": false,
+    "stableTypeOrdering": false,
+    "strictBuiltinIteratorReturn": true,
+    "target": "ES2025"
+  }
+}
