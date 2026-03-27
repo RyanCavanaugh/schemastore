@@ -413,6 +413,23 @@
                     "Node20",
                     "NodeNext",
                     "Preserve"
+                  ],
+                  "markdownEnumDescriptions": [
+                    "",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -436,9 +453,9 @@
                     "Bundler"
                   ],
                   "markdownEnumDescriptions": [
-                    "It’s recommended to use `\"Node16\"` instead",
-                    "Deprecated, use `\"Node10\"` in TypeScript 5.0+ instead",
-                    "It’s recommended to use `\"Node16\"` instead",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0. Use `\"Node10\"` instead.",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0. It is recommended to use `\"Node16\"` instead.",
                     "This is the recommended setting for libraries and Node.js applications",
                     "This is the recommended setting for libraries and Node.js applications",
                     "This is the recommended setting in TypeScript 5.0+ for applications that use a bundler"
@@ -548,9 +565,9 @@
             },
             "outFile": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output.",
+              "description": "Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output. Deprecated in TypeScript 6.0, removed in TypeScript 7.0.",
               "type": ["string", "null"],
-              "markdownDescription": "Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output.\n\nSee more: https://www.typescriptlang.org/tsconfig#outFile"
+              "markdownDescription": "Specify a file that bundles all outputs into one JavaScript file. If `declaration` is true, also designates a file that bundles all .d.ts output.\n\n**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.\n\nSee more: https://www.typescriptlang.org/tsconfig#outFile"
             },
             "outDir": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
@@ -574,10 +591,10 @@
             },
             "preserveValueImports": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Preserve unused imported values in the JavaScript output that would otherwise be removed",
+              "description": "Preserve unused imported values in the JavaScript output that would otherwise be removed. Deprecated in TypeScript 5.0, use `verbatimModuleSyntax` instead.",
               "type": ["boolean", "null"],
               "default": false,
-              "markdownDescription": "Preserve unused imported values in the JavaScript output that would otherwise be removed\n\nSee more: https://www.typescriptlang.org/tsconfig#preserveValueImports"
+              "markdownDescription": "Preserve unused imported values in the JavaScript output that would otherwise be removed\n\n**Deprecated** in TypeScript 5.0, use `verbatimModuleSyntax` instead.\n\nSee more: https://www.typescriptlang.org/tsconfig#preserveValueImports"
             },
             "preserveWatchOutput": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
@@ -682,6 +699,23 @@
                     "ES2024",
                     "ES2025",
                     "ESNext"
+                  ],
+                  "markdownEnumDescriptions": [
+                    "",
+                    "**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -802,9 +836,9 @@
             },
             "baseUrl": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Specify the base directory to resolve non-relative module names.",
+              "description": "Specify the base directory to resolve non-relative module names. Deprecated in TypeScript 6.0, removed in TypeScript 7.0.",
               "type": ["string", "null"],
-              "markdownDescription": "Specify the base directory to resolve non-relative module names.\n\nSee more: https://www.typescriptlang.org/tsconfig#baseUrl"
+              "markdownDescription": "Specify the base directory to resolve non-relative module names.\n\n**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.\n\nSee more: https://www.typescriptlang.org/tsconfig#baseUrl"
             },
             "paths": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
@@ -890,9 +924,9 @@
             },
             "allowSyntheticDefaultImports": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Allow 'import x from y' when a module doesn't have a default export.",
+              "description": "Allow 'import x from y' when a module doesn't have a default export. Setting this to `false` is deprecated in TypeScript 6.0, removed in TypeScript 7.0.",
               "type": ["boolean", "null"],
-              "markdownDescription": "Allow 'import x from y' when a module doesn't have a default export.\n\nSee more: https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports"
+              "markdownDescription": "Allow 'import x from y' when a module doesn't have a default export.\n\nSetting this to `false` is **deprecated** in TypeScript 6.0, removed in TypeScript 7.0.\n\nSee more: https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports"
             },
             "noImplicitUseStrict": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
@@ -1117,15 +1151,16 @@
               "markdownDescription": "Allow importing helper functions from tslib once per project, instead of including them per-file.\n\nSee more: https://www.typescriptlang.org/tsconfig#importHelpers"
             },
             "importsNotUsedAsValues": {
-              "description": "Specify emit/checking behavior for imports that are only used for types.",
+              "description": "Specify emit/checking behavior for imports that are only used for types. Deprecated in TypeScript 5.0, use `verbatimModuleSyntax` instead.",
               "default": "remove",
-              "enum": ["remove", "preserve", "error"]
+              "enum": ["remove", "preserve", "error"],
+              "markdownDescription": "Specify emit/checking behavior for imports that are only used for types.\n\n**Deprecated** in TypeScript 5.0, use `verbatimModuleSyntax` instead.\n\nSee more: https://www.typescriptlang.org/tsconfig#importsNotUsedAsValues"
             },
             "alwaysStrict": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Ensure 'use strict' is always emitted.",
+              "description": "Ensure 'use strict' is always emitted. Setting this to `false` is deprecated in TypeScript 6.0, removed in TypeScript 7.0.",
               "type": ["boolean", "null"],
-              "markdownDescription": "Ensure 'use strict' is always emitted.\n\nSee more: https://www.typescriptlang.org/tsconfig#alwaysStrict"
+              "markdownDescription": "Ensure 'use strict' is always emitted.\n\nSetting this to `false` is **deprecated** in TypeScript 6.0, removed in TypeScript 7.0.\n\nSee more: https://www.typescriptlang.org/tsconfig#alwaysStrict"
             },
             "strict": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
@@ -1143,10 +1178,10 @@
             },
             "downlevelIteration": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Emit more compliant, but verbose and less performant JavaScript for iteration.",
+              "description": "Emit more compliant, but verbose and less performant JavaScript for iteration. Deprecated in TypeScript 6.0, removed in TypeScript 7.0.",
               "type": ["boolean", "null"],
               "default": false,
-              "markdownDescription": "Emit more compliant, but verbose and less performant JavaScript for iteration.\n\nSee more: https://www.typescriptlang.org/tsconfig#downlevelIteration"
+              "markdownDescription": "Emit more compliant, but verbose and less performant JavaScript for iteration.\n\n**Deprecated** in TypeScript 6.0, removed in TypeScript 7.0.\n\nSee more: https://www.typescriptlang.org/tsconfig#downlevelIteration"
             },
             "checkJs": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
@@ -1171,10 +1206,10 @@
             },
             "esModuleInterop": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
-              "description": "Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility.",
+              "description": "Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. Setting this to `false` is deprecated in TypeScript 6.0, removed in TypeScript 7.0.",
               "type": ["boolean", "null"],
               "default": false,
-              "markdownDescription": "Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility.\n\nSee more: https://www.typescriptlang.org/tsconfig#esModuleInterop"
+              "markdownDescription": "Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility.\n\nSetting this to `false` is **deprecated** in TypeScript 6.0, removed in TypeScript 7.0.\n\nSee more: https://www.typescriptlang.org/tsconfig#esModuleInterop"
             },
             "allowUmdGlobalAccess": {
               "$comment": "The value of 'null' is UNDOCUMENTED (https://github.com/microsoft/TypeScript/pull/18058).",
